@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="about"
+  >
+    <div
+      class="about__content"
+    >
+      <h1
+        class="content__heading"
+      >
+        About Me
+      </h1>
+      <h3
+        class="content__heading"
+      >
+        <i>
+          Sharing a little bit of my story...
+        </i>
+      </h3>
+      <div
+        class="about__main"
+      >
+        <h3>
+          General Questions
+        </h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+      </div>
+      <div
+        class="about__main"
+      >
+        <h3>
+          Statistics
+        </h3>
+        <em>
+          And for those that don't fancy reading:
+        </em>
+        <p
+          class="stat__details"
+        >
+          Male, 200 years old.
+          <br />
+          Five feet 110 inches
+          <br />
+          Favorite fonts:Roboto 
+          <br />
+          Loves to learn new things
+        </p>
+      </div>
+      <button
+        class="button-opposite"
+      >
+        Contact
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -34,10 +34,10 @@ function Contact() {
             <h3>Contact Information</h3>
             <em>And for those that don't fancy reading:</em>
             <p className="stat__details">
-              <p>XXXX</p>
-              <p>XXXX</p>
-              <p>(XXXX)-445-7747</p>
-              <p>XXXXXX@gmail.com</p>
+              <small>XXXX</small><br></br>
+              <small>XXXX</small><br></br>
+              <small>(XXXX)-445-7747</small><br></br>
+              <small>XXXXXX@gmail.com</small>
             </p>
           </div>
         </div>

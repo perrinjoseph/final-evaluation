@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="summary"
+  >
+    <div
+      class="summary__row"
+    >
+      <div
+        class="cardglobal"
+      >
+        <img
+          class="cardglobal__img"
+          src="developerdesign.svg"
+        />
+        <section>
+          <h3>
+            Development and Design
+          </h3>
+          <p>
+            I aim to put my creativity to the test, designing and building unique, meaningful products for clients or merely for my own interests.
+          </p>
+        </section>
+      </div>
+      <div
+        class="cardglobal"
+      >
+        <img
+          class="cardglobal__img"
+          src="responsivedesign.svg"
+        />
+        <section>
+          <h3>
+            Responsive Layouts
+          </h3>
+          <p>
+            I aim to put my creativity to the test, designing and building unique, meaningful products for clients or merely for my own interests.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      class="summary__row"
+    >
+      <div
+        class="cardglobal"
+      >
+        <img
+          class="cardglobal__img"
+          src="innovativesolutions.svg"
+        />
+        <section>
+          <h3>
+            Ideas and Solutions
+          </h3>
+          <p>
+            There are still many problems that exist in today's society, including laziness. Luckily, I hope to combat these issues by innovating, developing easy-to-use programs, solutions, or products.
+          </p>
+        </section>
+      </div>
+      <div
+        class="cardglobal"
+      >
+        <img
+          class="cardglobal__img"
+          src="passion.svg"
+        />
+        <section>
+          <h3>
+            Passion and Dedication
+          </h3>
+          <p>
+            With my profound interest and commitment to my field of study, my projects rarely go unfinished and my problems are never left unresolved. 
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
