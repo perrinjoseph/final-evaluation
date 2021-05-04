@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 function Landing() {
   return (
-    <div class="main" id="landingPage">
+    <div className="main" id="landingPage">
       <section className="main__content">
         <h1 id="hello">Hello, Im</h1>
         <h1 id="name">XXX</h1>

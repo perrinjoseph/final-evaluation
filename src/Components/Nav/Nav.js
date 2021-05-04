@@ -12,7 +12,7 @@ function Nav() {
   };
   return (
     <nav className="navBar">
-      <img clasName="navBar__logo" src={logo}></img>
+      <img className="navBar__logo" src={logo}></img>
 
       <div onClick={() => handelClick()} className={`hamburger`}>
         <div className="hamburger__line"></div>

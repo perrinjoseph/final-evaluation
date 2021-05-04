@@ -13,9 +13,9 @@ function Projects() {
       <h1 className="projects__heading__center">
         Projects and Portfolio
         <br></br>
-        <h4>
+        <small>
           <i>Sharing my endeavors and passions...</i>
-        </h4>
+        </small>
       </h1>
 
       <div className="projects__rows projects">
