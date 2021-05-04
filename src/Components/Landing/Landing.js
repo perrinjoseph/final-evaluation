@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "../Button/Button";
 
-
-
 function Landing() {
-
- 
-
   return (
     <div class="main" id="landingPage">
       <section className="main__content">
@@ -15,7 +10,7 @@ function Landing() {
         <h1 id="person-description">
           UI Developer. UX Desinger. Problem Solver.
         </h1>
-        <Button  scrollTo={950} content={"Info"} />
+        <Button scrollTo={950} content={"Info"} />
         <Button scrollTo={2440} content={"Portfolio"} />
       </section>
     </div>
