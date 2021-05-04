@@ -1,58 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../images/logo.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Nav({ getState }) {
-  const [open, setOpen] = useState(false);
-  let isOpen = open;
-  const handelClick = () => {
-    setOpen(!open);
-    if (getState) {
-      getState(isOpen);
-    }
-  };
+function Nav() {
   return (
-    <div className={`navigation navigationMenu `}>
-      <div className="logo">
-        <img src={logo}></img>
-        <div
-          onClick={handelClick}
-          className={`hamburger ${open ? "hamburger-active" : ""}`}
-        >
-          <div className="hamburger__line"></div>
-          <div className="hamburger__line"></div>
-          <div className="hamburger__line"></div>
-        </div>
+    <nav className="navBar">
+      <img clasName="navBar__logo" src={logo}></img>
+
+      <div className={`hamburger`}>
+        <div className="hamburger__line"></div>
+        <div className="hamburger__line"></div>
+        <div className="hamburger__line"></div>
       </div>
 
-      <div className="navigationMenu__Links">
-        <ul className="navigationMenu__menu">
-          <Link
-            style={{ textDecoration: "none" }}
-            className="navigationMenu__item"
-            to="/"
-          >
-            <li>Home</li>
-          </Link>
-          <Link
-            style={{ textDecoration: "none" }}
-            className="navigationMenu__item"
-            to="/portfolio"
-          >
-            <li>Portfolio</li>
-          </Link>
-          <Link
-            style={{ textDecoration: "none" }}
-            className="navigationMenu__item"
-            to="/contact"
-          >
-            <li>Contact</li>
-          </Link>
-        </ul>
-      </div>
-    </div>
+      <section className="navBar__links">
+        <div>
+          <NavLink style={{ textDecoration: "none" }} to="/">
+            <span className="navBar__item">Home</span>
+          </NavLink>
+        </div>
+        <div>
+          <NavLink style={{ textDecoration: "none" }} to="/portfolio">
+            <span className="navBar__item">Portfolio</span>
+          </NavLink>
+        </div>
+        <div>
+          <NavLink style={{ textDecoration: "none" }} to="/contact">
+            <span className="navBar__item">Contact</span>
+          </NavLink>
+        </div>
+      </section>
+    </nav>
   );
 }
 
 export default Nav;
-
+{
+  /* <div className={`hamburger`}>
+          <div className="hamburger__line"></div>
+          <div className="hamburger__line"></div>
+          <div className="hamburger__line"></div>
+        </div> */
+}

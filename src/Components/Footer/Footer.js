@@ -7,7 +7,7 @@ import Email from "../../images/email.svg";
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer__row">
+      <div className="footer__row ">
         <img className="social__icon" src={Facebook}></img>
         <img className="social__icon" src={Linkedin}></img>
         <img className="social__icon" src={Pinterest}></img>

@@ -8,33 +8,12 @@ import Projects from "./Components/Projects/Projects";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
-import ResponsiveNav from "./Components/Nav/ResponsiveNav/ResponsiveNav";
-import { useEffect, useState } from "react";
 
 function App() {
-  const [open, setOpen] = useState(false);
-  const [size, setSize] = useState();
-
-  const handleResize = () => {
-    setSize(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className="App">
       <Router>
-        <Nav getState={(state) => setOpen(state)} />
-        {open ? (
-          <ResponsiveNav change={open && size <=533? "open" : ""} />
-        ) : (
-          <ResponsiveNav />
-        )}
-
+        <Nav />
         <Switch>
           <Route exact path="/">
             <Home />
