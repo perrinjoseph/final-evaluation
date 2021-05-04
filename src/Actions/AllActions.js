@@ -1,4 +1,6 @@
 import navbarActions from "./navbarActions";
-export default AllActions = {
+const AllActions = {
   navbarActions,
 };
+
+export default AllActions;

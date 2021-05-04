@@ -1,10 +1,8 @@
 let initialValue = false;
 const navBarReducer = (state = initialValue, action) => {
   switch (action.type) {
-    case "OPEN_NAV":
-      return true;
-    case "CLOSE_NAV":
-      return false;
+    case "TOGGLE_NAV":
+      return !state;
     default:
       return state;
   }

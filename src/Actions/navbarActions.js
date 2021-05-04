@@ -1,13 +1,7 @@
 const navbarActions = {
-  openNavBar: () => {
+  toggleNavBar: () => {
     return {
-      type: "OPEN_NAV",
-    };
-  },
-
-  closeNavBar: () => {
-    return {
-      type: "CLOSE_NAV",
+      type: "TOGGLE_NAV",
     };
   },
 };
