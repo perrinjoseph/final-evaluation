@@ -7,7 +7,7 @@ import Passion from "../../images/passion.svg";
 
 function Info() {
   return (
-    <div className="summary">
+    <div className="summary" id="">
       <div className="summary__row">
         <Card
           body={
