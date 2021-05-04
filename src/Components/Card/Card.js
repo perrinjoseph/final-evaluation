@@ -14,7 +14,7 @@ function Card({ title, body, image, project, bg }) {
         >
           <h3 className="main__content">{title}</h3>
           <p className="content__heading">{body}</p>
-          <Button content={"More"}/>
+          <Button scrollTo={0} content={"More"}/>
         </article>
       );
     default:

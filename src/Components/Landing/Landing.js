@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Button/Button";
+import $ from "jquery";
 
 function Landing() {
+
+ 
+
   return (
     <div class="main">
       <section className="main__content">
@@ -10,8 +14,8 @@ function Landing() {
         <h1 id="person-description">
           UI Developer. UX Desinger. Problem Solver.
         </h1>
-        <Button content={"Info"} />
-        <Button content={"Portfolio"} />
+        <Button scrollTo={950} content={"Info"} />
+        <Button scrollTo={2440} content={"Portfolio"} />
       </section>
     </div>
   );

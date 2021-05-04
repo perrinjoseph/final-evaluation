@@ -34,9 +34,12 @@ function Contact() {
             <h3>Contact Information</h3>
             <em>And for those that don't fancy reading:</em>
             <p className="stat__details">
-              <small>XXXX</small><br></br>
-              <small>XXXX</small><br></br>
-              <small>(XXXX)-445-7747</small><br></br>
+              <small>XXXX</small>
+              <br></br>
+              <small>XXXX</small>
+              <br></br>
+              <small>(XXXX)-445-7747</small>
+              <br></br>
               <small>XXXXXX@gmail.com</small>
             </p>
           </div>
@@ -81,7 +84,7 @@ function Contact() {
             <div className="row">
               <div className="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
                 <div className="">
-                  <Button content={"Submit"} />
+                  <Button scrollTo={0} content={"Submit"} />
                 </div>
               </div>
             </div>

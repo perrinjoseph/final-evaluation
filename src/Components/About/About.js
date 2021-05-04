@@ -34,7 +34,7 @@ function About() {
           </p>
         </div>
 
-        <Button content={"Contact"} opposite={true} />
+        <Button scrollTo={3340} content={"Contact"} opposite={true} />
       </div>
     </div>
   );

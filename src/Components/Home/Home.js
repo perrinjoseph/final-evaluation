@@ -9,11 +9,11 @@ import Contact from "../Contact/Contact";
 function Home() {
   return (
     <div className="home">
-      <Landing />
-      <About />
-      <Info />
-      <Projects />
-      <Contact />
+      <Landing className="landingSection"/>
+      <About className="aboutSection"/>
+      <Info className="infoSection"/>
+      <Projects className="projectsSection" />
+      <Contact className="contactSection" />
     </div>
   );
 }

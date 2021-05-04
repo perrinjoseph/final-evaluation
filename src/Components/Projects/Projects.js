@@ -5,10 +5,9 @@ import p2 from "../../images/logo.svg";
 import p3 from "../../images/mlbproject.png";
 import Button from "../Button/Button";
 
-
 function Projects() {
-    const myRef = useRef(null)
-    const scroll = () => myRef.current.scrollIntoView()    
+  const myRef = useRef(null);
+  const scroll = () => myRef.current.scrollIntoView();
   return (
     <div className="projects">
       <h1 className="projects__heading__center">
@@ -46,9 +45,8 @@ function Projects() {
         />
       </div>
       <div className="center__button">
-        <Button content={"More Projects"} />
+        <Button scrollTo={0} content={"More Projects"} />
       </div>
-      
     </div>
   );
 }

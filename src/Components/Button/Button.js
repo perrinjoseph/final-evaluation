@@ -1,8 +1,19 @@
 import React from "react";
 
-function Button({ content, opposite ,onClick}) {
+function Button({ content, opposite ,scrollTo}) {
+  const scrollToInfo = () => {
+    console.log("clicked");
+    window.scroll({
+      top: scrollTo,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <button onClick ={()=>onClick}className={opposite ? "button-opposite" : "button"}>
+    <button
+      onClick={scrollToInfo}
+      className={opposite ? "button-opposite" : "button"}
+    >
       {content}
     </button>
   );
