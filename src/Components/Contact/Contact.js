@@ -5,17 +5,19 @@ function Contact() {
   const handelClick = (e) => {
     e.preventDefault();
   };
+
   return (
     <div className="contact ">
       <h1 className="projects__heading__center">
         Contact
         <br></br>
-        <h5>
+        <small style={{ fontSize: "20px" }}>
           <i>"XXXX"</i>
-        </h5>
-        <h5>
+        </small>
+        <br></br>
+        <small style={{ fontSize: "20px" }}>
           <i>"XXXX"</i>
-        </h5>
+        </small>
       </h1>
       <main className="contact__main">
         <div className="about__main ">
@@ -41,7 +43,7 @@ function Contact() {
         </div>
         <div className="about__main">
           <h3>right</h3>
-          <form>
+          <form onClick={(e) => handelClick(e)}>
             <div className="row">
               <div className="col-sm-6 col-md-6">
                 <div className="firstname">
@@ -79,7 +81,7 @@ function Contact() {
             <div className="row">
               <div className="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
                 <div className="">
-                  <Button onClick={(e) => handelClick(e)} content={"Submit"} />
+                  <Button content={"Submit"} />
                 </div>
               </div>
             </div>

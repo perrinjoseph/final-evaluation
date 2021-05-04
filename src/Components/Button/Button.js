@@ -1,8 +1,8 @@
 import React from "react";
 
-function Button({ content, opposite }) {
+function Button({ content, opposite ,onClick}) {
   return (
-    <button className={opposite ? "button-opposite" : "button"}>
+    <button onClick ={()=>onClick}className={opposite ? "button-opposite" : "button"}>
       {content}
     </button>
   );

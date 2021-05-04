@@ -17,12 +17,96 @@ html {
   background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
 }
 
+.navigationMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  &__menu {
+    display: flex;
+    list-style-type: none;
+  }
+  &__item {
+    color: white;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+}
+
+.hamburger__line {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(180, 180, 180);
+  margin: 6px 15px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: none;
+}
+
 .logo img {
   max-width: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .primary-nav {
   padding-right: 50px;
 }
+
+@media (max-width: 532px) {
+  .navigationMenu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 70px;
+    padding-top: 50px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 10000;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.resp__nav {
+  flex-direction: column;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  float: right;
+  background-color: rgb(34, 34, 34);
+  margin: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+  padding: 0px 30px;
+  border-radius: 0px 0px 30px 30px;
+}
+.open {
+  height: 60%;
+  padding: 100px 30px;
+}
+
+.navigationMenu__item > li {
+  text-align: right;
+  font-size: larger;
+}
+.resp__nav__links {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
 .primary-nav li {
   display: inline-block;
   margin: 0px 20px;
@@ -44,6 +128,11 @@ html {
   color: white;
   border-bottom: 2px solid #f5f5f5;
 }
+.navLinks {
+  display: flex;
+
+  justify-content: center;
+}
 
 /* Main banner */
 .main {
@@ -60,6 +149,7 @@ html {
 }
 .main__content {
   text-align: center;
+  margin-top: 90px;
 }
 
 .button {
@@ -448,10 +538,8 @@ textarea {
   display: flex;
 }
 
-.footerClass{
-    
+.footerClass {
 }
-
 
 .footer h3,
 .footer h4 {
